@@ -1,0 +1,114 @@
+.burger-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 430px;
+
+  position: fixed;
+  top: 30%;
+  left: 47%;
+  z-index: 1000;
+
+  pointer-events: none;
+}
+
+.burger__top {
+  &-wrapper {
+    z-index: 10;
+    position: relative;
+    transition: all 0.5s ease-in;
+    transform: translateY(0);
+    max-width: 339px;
+  }
+
+  &-line {
+    left: 90%;
+    top: 50%;
+  }
+
+  &-desc {
+    left: 160%;
+    top: 33%;
+  }
+}
+.burger__salad {
+  &-wrapper {
+    z-index: 9;
+    position: relative;
+    transition: all 0.5s ease-in;
+
+    max-width: 426px;
+    transform: translateY(-65px);
+  }
+
+  &-line {
+    right: 85%;
+    top: 70%;
+  }
+
+  &-desc {
+    right: 100%;
+    bottom: 24%;
+  }
+}
+
+.burger__meat {
+  &-wrapper {
+    z-index: 8;
+    position: relative;
+    transition: all 0.5s ease-in;
+
+    max-width: 426px;
+    transform: translateY(-130px);
+  }
+
+  &-line {
+    left: 85%;
+    top: 43%;
+  }
+
+  &-desc {
+    left: 105%;
+    top: 26%;
+  }
+}
+.burger__bottom {
+  &-wrapper {
+    z-index: 7;
+    position: relative;
+    transition: all 0.5s ease-in;
+
+    max-width: 426px;
+    transform: translateY(-205px);
+  }
+
+  &-line {
+    right: 85%;
+    top: 40%;
+  }
+
+  &-desc {
+    right: 140%;
+    top: 26%;
+  }
+}
+
+.burger-ingredient {
+  position: absolute;
+  color: var(--page-bg);
+  font-family: Atma;
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  &-line {
+    position: absolute;
+  }
+}
+
+
+.burger__ingredients{
+    opacity: 0;
+
+    transition: opacity 1.2s ease-in;
+}

@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Atma:600);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,700,800);
+
+:root {
+	--container-width: 1200px;
+	--container-padding: 35px;
+
+	--font-main: 'Inter', sans-serif;
+	--font-accent: 'Poppins', sans-serif;
+	--font-accent-creative: 'Atma', cursive;
+
+	--page-bg: #fff;
+	--page-bg-gradient: linear-gradient(180deg, #A80000 0%, #4E1919 100%);
+	--text-color: #0b0b0b;
+	--text-accent: #FF1818;
+	--accent: #9A0404;
+	--price-color: #F90;
+
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}

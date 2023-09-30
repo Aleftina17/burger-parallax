@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
+
+    <script src="./libs/swiper/swiper-bundle.min.js" defer></script>
+    <script src="./libs/particles/particles.js" defer></script>
+    <script src="./js/index.bundle.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="logo"><a href="#!"><img src="/img/logo.svg" alt="Logo" class="logo-img"></a></div>
+            <nav class="nav">
+                <ul class="nav__list">
+                <li><a class="nav__link" href="#!">Home</a></li>
+                <li><a class="nav__link" href="#!">About</a></li>
+                <li><a class="nav__link" href="#!">Sides</a></li>
+                <li><a class="nav__link" href="#!">Specials</a></li>
+            </ul>
+            </nav>
+            <button class="btn btn-order">ORDER NOW</button>
+        </div>
+    </div>
+</header>
+    
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="container">
+  <div class="hero">
+    <div class="hero__text">
+        <h1 class="title-1"><span>Crunchy Meat</span><br>
+            All Day makes the<br>
+            Pain <span>Go Away</span></h1>
+    
+        <div class="hero__desc">Lorem ipsum dolor sit met consecteur amendelia
+            aspratti septumdevo lipton seth dalimac.</div>
+    
+            <div class="hero__price">$20.40</div>
+            <button class="btn btn-order-red"><span>ORDER NOW</span><img src="img/arrow-forward-circle.svg" alt="Order" class="arrow-right"></button>
+            
+    </div>
+  </div>
+</div>
+
+          <div class="leaves-wrapper" data-swiper-parallax="30%">
+            <img src="img/leaves.png" alt="Leaves" />
+          </div>
+          <div class="white-bg" data-swiper-parallax="20%"></div>
+        </div>
+
+        <div class="swiper-slide"><div class="container">
+  <div class="ingredients">
+    <div class="ingredients__title">
+      <h2 class="title-2">
+        Double Jazzy<br />
+        Beef Burger
+      </h2>
+    </div>
+    <div class="ingredients__order">
+
+      <div class="order-input-wrapper" data-swiper-parallax="50%">
+        <button class="button-minus" id="minus"></button>
+        <input type="number" class="order-input" id="orderInput" value="1"/>
+        <button class="button-plus" id="plus"></button>
+      </div>
+
+      <button class="btn btn-order-white">ORDER NOW</button>
+    </div>
+  </div>
+</div>
+</div>
+      </div>
+    </div>
+
+    <div class="burger-wrapper">
+  <div class="burger__top-wrapper">
+    <img class="burger__top" src="./img/bun-top.png" alt="Bun" />
+    <div class="burger__ingredients">
+      <img src="./img/line-right.png" alt="line" class="burger-ingredient-line burger__top-line"/>
+      <div class="burger__top-desc burger-ingredient">Hot Bun</div>
+    </div>
+  </div>
+
+  <div class="burger__salad-wrapper">
+    <img class="burger__salad" src="./img/salad.png" alt="Salad" />
+    <div class="burger__ingredients">
+      <img src="./img/line-left.png" alt="line" class="burger-ingredient-line burger__salad-line"/>
+      <div class="burger-ingredient burger__salad-desc">
+        Onnion, Lettuce & Tomatoes
+      </div>
+    </div>
+  </div>
+
+  <div class="burger__meat-wrapper">
+    <img class="burger__meat" src="./img/meat.png" alt="Meat" />
+    <div class="burger__ingredients">
+      <img src="./img/line-right.png" alt="line" class="burger-ingredient-line burger__meat-line"/>
+      <div class="burger-ingredient burger__meat-desc">
+        Mustard and Grilled Meat
+      </div>
+    </div>
+  </div>
+
+  <div class="burger__bottom-wrapper">
+    <img class="burger__bottom" src="./img/bun-bottom.png" alt="Bun" />
+    <div class="burger__ingredients">
+      <img src="./img/line-left.png" alt="line" class="burger-ingredient-line burger__bottom-line"/>
+      <div class="burger-ingredient burger__bottom-desc">Hot Bun</div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+</html>

@@ -1,0 +1,131 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--page-bg-gradient);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color);
+  font-family: var(--font-main);
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: auto;
+
+  position: relative;
+}
+
+.btn {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid var(--page-bg);
+  padding: 9px 66px;
+
+  transition: background-color 0.2s ease-in;
+
+  &-order {
+    color: var(--page-bg);
+
+    &:hover {
+      background-color: var(--page-bg);
+      color: var(--accent);
+    }
+
+    &-white {
+      color: var(--accent);
+      background: var(--page-bg);
+
+      &:hover {
+        background-color: var(--accent);
+        color: var(--page-bg);
+      }
+    }
+
+    &-red {
+      color: var(--page-bg);
+      background-color: var(--accent);
+      border: none;
+
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 6px 37px;
+
+      .arrow-right {
+        transition: transform 0.2s ease-in;
+      }
+
+      &:hover {
+        .arrow-right {
+          transform: translateX(8px);
+        }
+      }
+    }
+  }
+}
+
+.leaves-wrapper {
+  width: 784px;
+  height: 784px;
+  position: absolute;
+  top: -207px;
+  right: 230px;
+  z-index: -1;
+}
+
+.white-bg {
+  background-color: var(--page-bg);
+  position: absolute;
+  top: -100%;
+  bottom: -100px;
+  left: -55%;
+  
+  width: 117%;
+  z-index: -100;
+}
+
+.title-1 {
+  color: var(--text-color);
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 119.5%;
+  span {
+    color: var(--text-accent);
+  }
+}
+
+.title-2 {
+color: var(--page-bg);
+font-family: Poppins;
+font-size: 40px;
+font-weight: 700;
+position: relative;
+padding-left: 16px;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 9px;
+    background: #F90;
+}
+}
+
+.swiper-wrapper{
+  margin-top: 221px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.display-none{
+  display: none;
+}

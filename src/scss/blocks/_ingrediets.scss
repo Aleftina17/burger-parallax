@@ -1,0 +1,61 @@
+.ingredients {
+  margin-top: -70px;
+  height: 70vh;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  &__title{
+    grid-area: 1 / 1 / 2 / 2; 
+  }
+
+  &__order{
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: end;
+    align-self: flex-end;
+
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+  }
+}
+
+
+
+.order-input {
+    color: #F90;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 100px;
+    text-align: center; 
+
+    &-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+    }
+}
+
+.button-plus, .button-minus{
+color: var(--accent);
+width: 30px;
+height: 30px;
+border-radius: 100%;
+}
+
+.button-minus {
+    background-image: url('../img/remove-circle.svg');
+    background-size: contain;
+}
+
+.button-plus{
+    background-image: url('../img/add-circle.svg');
+    background-size: contain;
+}
+
+

@@ -1,0 +1,38 @@
+.header {
+  background: transparent;
+  padding: 26px 0;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+
+    a {
+      color: inherit;
+	  transition: color .15s ease-in;
+
+	  &:hover{
+		color: var(--text-accent);
+	  }
+    }
+  }
+}

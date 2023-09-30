@@ -1,0 +1,37 @@
+.hero {
+  display: flex;
+  align-items: start;
+  gap: 73px;
+  height: 100vh;
+}
+
+.hero__desc {
+  max-width: 414px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 14px 0 30px;
+}
+.hero__price {
+  color: var(--price-color);
+  font-family: Inter;
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
+  max-width: 194px;
+  padding-left: 7px;
+  z-index: 2;
+  margin-bottom: 32px;
+
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+   
+    height: 19px;
+    background: #C5FFC3;
+    z-index: -1;
+  }
+}
